@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "research-ledger"
+version = "1.0.0"
+description = "An append-only log of results and decisions, and preregistrations that freeze code and data and let the outcome be read once."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Artem Vartanov"}]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+research-ledger = "research_ledger.__main__:main"
+
+[tool.setuptools]
+packages = ["research_ledger"]

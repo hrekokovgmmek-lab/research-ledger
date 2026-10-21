@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1191" height="651" viewBox="0 0 1191 651" role="img" aria-label="research-ledger — python3 -m research_ledger demo">
+<rect x="0.5" y="0.5" width="1190" height="650" rx="10" fill="#0d1117" stroke="#30363d"/>
+<path d="M0.5 30 V10.5 A10 10 0 0 1 10.5 0.5 H1180.5 A10 10 0 0 1 1190.5 10.5 V30 Z" fill="#161b22"/>
+<line x1="0.5" y1="30" x2="1190.5" y2="30" stroke="#30363d"/>
+<circle cx="18" cy="15.5" r="5.5" fill="#ff5f57"/><circle cx="36" cy="15.5" r="5.5" fill="#febc2e"/><circle cx="54" cy="15.5" r="5.5" fill="#28c840"/>
+<text x="596" y="20" text-anchor="middle" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#8b949e">research-ledger — python3 -m research_ledger demo</text>
+<g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13">
+<text x="18" y="50" xml:space="preserve"><tspan fill="#3fb950" font-weight="600">$ </tspan><tspan fill="#f0f6fc">python3 -m research_ledger demo</tspan></text>
+<text x="18" y="69" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600"># freeze the analysis and the data before the outcome exists</tspan></text>
+<text x="18" y="88" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600">frozen 2 files, read after 2026-11-01T12:00:00Z</tspan></text>
+<text x="18" y="107" xml:space="preserve"><tspan fill="#c9d1d9"></tspan></text>
+<text x="18" y="126" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600"># the analysis starts too early</tspan></text>
+<text x="18" y="145" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600">REFUSED: PREREG-exit-rule.md: too early, read not before 2026-11-01T12:00:00Z</tspan></text>
+<text x="18" y="164" xml:space="preserve"><tspan fill="#c9d1d9"></tspan></text>
+<text x="18" y="183" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600"># someone &#x27;fixes&#x27; the analysis after the freeze</tspan></text>
+<text x="18" y="202" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600">REFUSED: PREREG-exit-rule.md: frozen files changed: analysis.py 666840553592 -&gt; 296108377663</tspan></text>
+<text x="18" y="221" xml:space="preserve"><tspan fill="#c9d1d9"></tspan></text>
+<text x="18" y="240" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600"># the first read, on time and with the frozen code</tspan></text>
+<text x="18" y="259" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600">allowed, read logged at 2026-11-01T13:00:00Z</tspan></text>
+<text x="18" y="278" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600">result recorded</tspan></text>
+<text x="18" y="297" xml:space="preserve"><tspan fill="#c9d1d9"></tspan></text>
+<text x="18" y="316" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600"># a second look, hoping for a better number</tspan></text>
+<text x="18" y="335" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600">REFUSED: PREREG-exit-rule.md: the outcome was already read at 2026-11-01T13:00:00Z; a second read needs a stated reason</tspan></text>
+<text x="18" y="354" xml:space="preserve"><tspan fill="#c9d1d9">  (again=...)</tspan></text>
+<text x="18" y="373" xml:space="preserve"><tspan fill="#c9d1d9"></tspan></text>
+<text x="18" y="392" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600"># a wrong number is corrected, never overwritten</tspan></text>
+<text x="18" y="411" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600">2026-11-01T13:01:00Z  result  trailing stop vs 30-min hold | n=412 | paper trades 2026-10-01..10-31</tspan></text>
+<text x="18" y="430" xml:space="preserve"><tspan fill="#c9d1d9">                      mean +0.8 %/trade; 97.5 % CI [-0.6; +2.1]; verdict not adopted</tspan></text>
+<text x="18" y="449" xml:space="preserve"><tspan fill="#c9d1d9">                      code analysis.py (666840553592)</tspan></text>
+<text x="18" y="468" xml:space="preserve"><tspan fill="#c9d1d9">                      ! CORRECTED at 2026-11-01T15:00:00Z: read the correction, not this row</tspan></text>
+<text x="18" y="487" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600">2026-11-01T15:00:00Z  CORRECTION of 2026-11-01T13:01:00Z: trailing stop vs 30-min hold -&gt; {&#x27;mean&#x27;: &#x27;+0.7 %/trade&#x27;} (fee was</tspan></text>
+<text x="18" y="506" xml:space="preserve"><tspan fill="#c9d1d9">  counted once)</tspan></text>
+<text x="18" y="525" xml:space="preserve"><tspan fill="#c9d1d9"></tspan></text>
+<text x="18" y="544" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600"># another idea: expected effect 1.5 pp, but the sample only resolves 4.0 pp</tspan></text>
+<text x="18" y="563" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600">&gt; **VETO 2026-11-01T16:00:00Z (research-ledger).** Expected effect X=1.5 is below the resolution Y=4. Needed:  ...</tspan></text>
+<text x="18" y="582" xml:space="preserve"><tspan fill="#c9d1d9"></tspan></text>
+<text x="18" y="601" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600"># secrets do not reach the ledger</tspan></text>
+<text x="18" y="620" xml:space="preserve"><tspan fill="#f0f6fc" font-weight="600">sample stored as: https://rpc.example.com/?api-key=REDACTED</tspan></text>
+</g></svg>
